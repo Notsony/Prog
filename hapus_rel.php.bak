@@ -1,0 +1,7 @@
+<?php
+include "koneksi.php";
+$kode = $_GET['realisasi'];
+$q = mysql_query("DELETE from realisasi where kode_res ='$kode'");
+
+header("location:realisasi.php");
+?>
